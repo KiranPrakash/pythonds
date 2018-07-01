@@ -35,6 +35,27 @@ class BinaryTree:
         self.key = new_value
 
 
+def preorder(tree):
+    if tree:#this is the base class, recursion ends when you reach the child tree
+        print(tree.get_root_value())
+        preorder(tree.get_left_child())
+        preorder(tree.get_right_child())
+
+
+def postorder(tree):
+    if tree is not None:
+        tree.get_left_child()
+        tree.get_right_child()
+        print(tree.get_root_value())
+
+
+def inorder(tree):
+    if tree is not None:
+        inorder(tree.get_left_child)
+        print(tree.get_root_value)
+        inorder(tree.get_right_child)
+
+
 def main():
     r = BinaryTree('a')
     print(r.left_child)

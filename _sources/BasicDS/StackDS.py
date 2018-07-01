@@ -2,7 +2,7 @@ class Stack:
     def __init__(self):
         self.items = []
 
-    def push(self,item):
+    def push(self, item):
         return self.items.append(item)
 
     def pop(self):
@@ -57,3 +57,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
